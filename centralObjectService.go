@@ -8,7 +8,7 @@ import (
   "bytes"
   "fmt"
 )
-
+// TODO: create a 
 type CentralObjectService struct {
   updateBuilder CentralObjectBuilder
 }
@@ -65,7 +65,7 @@ func (c *CentralObjectService) createConflictId(opType string, objectId string) 
   if len(opType) > 0 && len(objectId) > 0 {
     return opType + "_" + objectId, nil
   }
-  return "", errors.New("Invalid input")
+  return "", errors.New("invalid input")
 }
 
 /**

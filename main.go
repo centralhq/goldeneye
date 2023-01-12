@@ -7,11 +7,3 @@ type CentralObject struct {
   IsDeleted 	bool		`json:"isDeleted"`
   Payload 	    interface{}	`json:"payload"`
 }
-
-type ServerHandler struct {
-
-}
-
-func NewServerHandler() *ServerHandler {
-	return &ServerHandler{}
-}
